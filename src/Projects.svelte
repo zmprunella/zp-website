@@ -18,20 +18,24 @@
   <h1 class="glow">Projects</h1>
   <div class="projects-container">
     <Project
+      title="Lead WordPress Developer"
+      imgSrc="/images/anch.png"
+      appUrl="https://ancherz.com/"
+    />
+    <Project
+      title="WordPress Developer"
+      imgSrc="/images/ynk.png"
+      appUrl="https://ynkconstructions.com/"
+    />
+    <Project
       title="Vue Synth"
       imgSrc="/images/synth.png"
       githubUrl="https://github.com/zmprunella/vue-typescript-synth"
       appUrl="https://zesty-moxie-b93139.netlify.app/"
     />
     <Project
-      title="Gradient Generator"
-      imgSrc="/images/grad.png"
-      githubUrl="https://github.com/zmprunella/react-gradient-generator"
-      appUrl="https://64482e2970ff0b1300cead12--glowing-cocada-a30a04.netlify.app/"
-    />
-    <Project
       title="React Pokedex"
-      imgSrc="/images/poke.png"
+      imgSrc="/images/poke1.png"
       githubUrl="https://github.com/zmprunella/vue-typescript-synth"
       appUrl="https://zippy-praline-5fe3c6.netlify.app/"
     />

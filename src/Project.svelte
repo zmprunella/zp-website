@@ -2,7 +2,7 @@
 <script>
   import { onMount, createEventDispatcher } from "svelte";
   export let imgSrc;
-  export let githubUrl;
+  // export let githubUrl;
   export let appUrl;
   export let title;
 
@@ -21,7 +21,7 @@
   </div>
 
   <div class="buttons">
-    <a href={githubUrl} target="_blank" rel="noopener" class="btn">GitHub</a>
+    <!-- <a href={githubUrl} target="_blank" rel="noopener" class="btn">GitHub</a> -->
     <a href={appUrl} target="_blank" rel="noopener" class="btn">View App</a>
   </div>
 </div>

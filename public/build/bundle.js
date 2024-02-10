@@ -52763,49 +52763,38 @@ var app = (function () {
     	let img_src_value;
     	let t2;
     	let div1;
-    	let a0;
+    	let a;
     	let t3;
-    	let t4;
-    	let a1;
-    	let t5;
 
     	const block = {
     		c: function create() {
     			div2 = element("div");
     			h2 = element("h2");
-    			t0 = text(/*title*/ ctx[3]);
+    			t0 = text(/*title*/ ctx[2]);
     			t1 = space();
     			div0 = element("div");
     			img = element("img");
     			t2 = space();
     			div1 = element("div");
-    			a0 = element("a");
-    			t3 = text("GitHub");
-    			t4 = space();
-    			a1 = element("a");
-    			t5 = text("View App");
+    			a = element("a");
+    			t3 = text("View App");
     			attr_dev(h2, "class", "title svelte-pbc6e2");
-    			add_location(h2, file$2, 17, 2, 349);
+    			add_location(h2, file$2, 17, 2, 352);
     			if (!src_url_equal(img.src, img_src_value = /*imgSrc*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
     			attr_dev(img, "class", "svelte-pbc6e2");
-    			add_location(img, file$2, 19, 4, 416);
+    			add_location(img, file$2, 19, 4, 419);
     			attr_dev(div0, "class", "image-container svelte-pbc6e2");
-    			add_location(div0, file$2, 18, 2, 382);
-    			attr_dev(a0, "href", /*githubUrl*/ ctx[1]);
-    			attr_dev(a0, "target", "_blank");
-    			attr_dev(a0, "rel", "noopener");
-    			attr_dev(a0, "class", "btn svelte-pbc6e2");
-    			add_location(a0, file$2, 23, 4, 482);
-    			attr_dev(a1, "href", /*appUrl*/ ctx[2]);
-    			attr_dev(a1, "target", "_blank");
-    			attr_dev(a1, "rel", "noopener");
-    			attr_dev(a1, "class", "btn svelte-pbc6e2");
-    			add_location(a1, file$2, 24, 4, 560);
+    			add_location(div0, file$2, 18, 2, 385);
+    			attr_dev(a, "href", /*appUrl*/ ctx[1]);
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "rel", "noopener");
+    			attr_dev(a, "class", "btn svelte-pbc6e2");
+    			add_location(a, file$2, 24, 4, 572);
     			attr_dev(div1, "class", "buttons svelte-pbc6e2");
-    			add_location(div1, file$2, 22, 2, 456);
+    			add_location(div1, file$2, 22, 2, 459);
     			attr_dev(div2, "class", "project svelte-pbc6e2");
-    			add_location(div2, file$2, 16, 0, 309);
+    			add_location(div2, file$2, 16, 0, 312);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -52819,33 +52808,26 @@ var app = (function () {
     			append_dev(div0, img);
     			append_dev(div2, t2);
     			append_dev(div2, div1);
-    			append_dev(div1, a0);
-    			append_dev(a0, t3);
-    			append_dev(div1, t4);
-    			append_dev(div1, a1);
-    			append_dev(a1, t5);
-    			/*div2_binding*/ ctx[5](div2);
+    			append_dev(div1, a);
+    			append_dev(a, t3);
+    			/*div2_binding*/ ctx[4](div2);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*title*/ 8) set_data_dev(t0, /*title*/ ctx[3]);
+    			if (dirty & /*title*/ 4) set_data_dev(t0, /*title*/ ctx[2]);
 
     			if (dirty & /*imgSrc*/ 1 && !src_url_equal(img.src, img_src_value = /*imgSrc*/ ctx[0])) {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*githubUrl*/ 2) {
-    				attr_dev(a0, "href", /*githubUrl*/ ctx[1]);
-    			}
-
-    			if (dirty & /*appUrl*/ 4) {
-    				attr_dev(a1, "href", /*appUrl*/ ctx[2]);
+    			if (dirty & /*appUrl*/ 2) {
+    				attr_dev(a, "href", /*appUrl*/ ctx[1]);
     			}
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div2);
-    			/*div2_binding*/ ctx[5](null);
+    			/*div2_binding*/ ctx[4](null);
     		}
     	};
 
@@ -52864,7 +52846,6 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Project', slots, []);
     	let { imgSrc } = $$props;
-    	let { githubUrl } = $$props;
     	let { appUrl } = $$props;
     	let { title } = $$props;
     	const dispatch = createEventDispatcher();
@@ -52879,10 +52860,6 @@ var app = (function () {
     			console.warn("<Project> was created without expected prop 'imgSrc'");
     		}
 
-    		if (githubUrl === undefined && !('githubUrl' in $$props || $$self.$$.bound[$$self.$$.props['githubUrl']])) {
-    			console.warn("<Project> was created without expected prop 'githubUrl'");
-    		}
-
     		if (appUrl === undefined && !('appUrl' in $$props || $$self.$$.bound[$$self.$$.props['appUrl']])) {
     			console.warn("<Project> was created without expected prop 'appUrl'");
     		}
@@ -52892,7 +52869,7 @@ var app = (function () {
     		}
     	});
 
-    	const writable_props = ['imgSrc', 'githubUrl', 'appUrl', 'title'];
+    	const writable_props = ['imgSrc', 'appUrl', 'title'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Project> was created with unknown prop '${key}'`);
@@ -52901,22 +52878,20 @@ var app = (function () {
     	function div2_binding($$value) {
     		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
     			ref = $$value;
-    			$$invalidate(4, ref);
+    			$$invalidate(3, ref);
     		});
     	}
 
     	$$self.$$set = $$props => {
     		if ('imgSrc' in $$props) $$invalidate(0, imgSrc = $$props.imgSrc);
-    		if ('githubUrl' in $$props) $$invalidate(1, githubUrl = $$props.githubUrl);
-    		if ('appUrl' in $$props) $$invalidate(2, appUrl = $$props.appUrl);
-    		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+    		if ('appUrl' in $$props) $$invalidate(1, appUrl = $$props.appUrl);
+    		if ('title' in $$props) $$invalidate(2, title = $$props.title);
     	};
 
     	$$self.$capture_state = () => ({
     		onMount,
     		createEventDispatcher,
     		imgSrc,
-    		githubUrl,
     		appUrl,
     		title,
     		dispatch,
@@ -52925,29 +52900,22 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('imgSrc' in $$props) $$invalidate(0, imgSrc = $$props.imgSrc);
-    		if ('githubUrl' in $$props) $$invalidate(1, githubUrl = $$props.githubUrl);
-    		if ('appUrl' in $$props) $$invalidate(2, appUrl = $$props.appUrl);
-    		if ('title' in $$props) $$invalidate(3, title = $$props.title);
-    		if ('ref' in $$props) $$invalidate(4, ref = $$props.ref);
+    		if ('appUrl' in $$props) $$invalidate(1, appUrl = $$props.appUrl);
+    		if ('title' in $$props) $$invalidate(2, title = $$props.title);
+    		if ('ref' in $$props) $$invalidate(3, ref = $$props.ref);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [imgSrc, githubUrl, appUrl, title, ref, div2_binding];
+    	return [imgSrc, appUrl, title, ref, div2_binding];
     }
 
     class Project extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-
-    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
-    			imgSrc: 0,
-    			githubUrl: 1,
-    			appUrl: 2,
-    			title: 3
-    		});
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { imgSrc: 0, appUrl: 1, title: 2 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -52962,14 +52930,6 @@ var app = (function () {
     	}
 
     	set imgSrc(value) {
-    		throw new Error("<Project>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	get githubUrl() {
-    		throw new Error("<Project>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	set githubUrl(value) {
     		throw new Error("<Project>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
@@ -53004,10 +52964,30 @@ var app = (function () {
     	let t3;
     	let project2;
     	let t4;
+    	let project3;
+    	let t5;
     	let div1;
     	let current;
 
     	project0 = new Project({
+    			props: {
+    				title: "Lead WordPress Developer",
+    				imgSrc: "/images/anch.png",
+    				appUrl: "https://ancherz.com/"
+    			},
+    			$$inline: true
+    		});
+
+    	project1 = new Project({
+    			props: {
+    				title: "WordPress Developer",
+    				imgSrc: "/images/ynk.png",
+    				appUrl: "https://ynkconstructions.com/"
+    			},
+    			$$inline: true
+    		});
+
+    	project2 = new Project({
     			props: {
     				title: "Vue Synth",
     				imgSrc: "/images/synth.png",
@@ -53017,20 +52997,10 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	project1 = new Project({
-    			props: {
-    				title: "Gradient Generator",
-    				imgSrc: "/images/grad.png",
-    				githubUrl: "https://github.com/zmprunella/react-gradient-generator",
-    				appUrl: "https://64482e2970ff0b1300cead12--glowing-cocada-a30a04.netlify.app/"
-    			},
-    			$$inline: true
-    		});
-
-    	project2 = new Project({
+    	project3 = new Project({
     			props: {
     				title: "React Pokedex",
-    				imgSrc: "/images/poke.png",
+    				imgSrc: "/images/poke1.png",
     				githubUrl: "https://github.com/zmprunella/vue-typescript-synth",
     				appUrl: "https://zippy-praline-5fe3c6.netlify.app/"
     			},
@@ -53050,12 +53020,14 @@ var app = (function () {
     			t3 = space();
     			create_component(project2.$$.fragment);
     			t4 = space();
+    			create_component(project3.$$.fragment);
+    			t5 = space();
     			div1 = element("div");
     			attr_dev(h1, "class", "glow");
     			add_location(h1, file$1, 17, 2, 346);
     			attr_dev(div0, "class", "projects-container svelte-17tu9s3");
     			add_location(div0, file$1, 18, 2, 379);
-    			add_location(div1, file$1, 38, 2, 1072);
+    			add_location(div1, file$1, 42, 2, 1088);
     			attr_dev(div2, "id", "projects");
     			attr_dev(div2, "class", "svelte-17tu9s3");
     			add_location(div2, file$1, 16, 0, 303);
@@ -53073,7 +53045,9 @@ var app = (function () {
     			mount_component(project1, div0, null);
     			append_dev(div0, t3);
     			mount_component(project2, div0, null);
-    			append_dev(div2, t4);
+    			append_dev(div0, t4);
+    			mount_component(project3, div0, null);
+    			append_dev(div2, t5);
     			append_dev(div2, div1);
     			/*div1_binding*/ ctx[1](div1);
     			/*div2_binding*/ ctx[2](div2);
@@ -53085,12 +53059,14 @@ var app = (function () {
     			transition_in(project0.$$.fragment, local);
     			transition_in(project1.$$.fragment, local);
     			transition_in(project2.$$.fragment, local);
+    			transition_in(project3.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(project0.$$.fragment, local);
     			transition_out(project1.$$.fragment, local);
     			transition_out(project2.$$.fragment, local);
+    			transition_out(project3.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -53098,6 +53074,7 @@ var app = (function () {
     			destroy_component(project0);
     			destroy_component(project1);
     			destroy_component(project2);
+    			destroy_component(project3);
     			/*div1_binding*/ ctx[1](null);
     			/*div2_binding*/ ctx[2](null);
     		}
