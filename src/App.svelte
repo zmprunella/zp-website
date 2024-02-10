@@ -63,8 +63,8 @@
 
 <div id="content">
   <Contact on:loaded={handleComponentLoaded} />
-  <About on:loaded={handleComponentLoaded} />
   <Projects on:loaded={handleComponentLoaded} />
+  <About on:loaded={handleComponentLoaded} />
 </div>
 
 <style>

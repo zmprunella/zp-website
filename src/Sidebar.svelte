@@ -27,17 +27,18 @@
   >
     Contact
   </button>
-  <button
-    class:active={$activeSection === "about"}
-    on:click={() => scrollTo("about")}
-  >
-    About
-  </button>
+
   <button
     class:active={$activeSection === "projects"}
     on:click={() => scrollTo("projects")}
   >
     Projects
+  </button>
+  <button
+    class:active={$activeSection === "about"}
+    on:click={() => scrollTo("about")}
+  >
+    About
   </button>
 </aside>
 

@@ -18,7 +18,7 @@
   <h1 class="glow">Projects</h1>
   <div class="projects-container">
     <Project
-      title="Simple Synth"
+      title="Vue Synth"
       imgSrc="/images/synth.png"
       githubUrl="https://github.com/zmprunella/vue-typescript-synth"
       appUrl="https://zesty-moxie-b93139.netlify.app/"
@@ -30,7 +30,7 @@
       appUrl="https://64482e2970ff0b1300cead12--glowing-cocada-a30a04.netlify.app/"
     />
     <Project
-      title="Pokedex"
+      title="React Pokedex"
       imgSrc="/images/poke.png"
       githubUrl="https://github.com/zmprunella/vue-typescript-synth"
       appUrl="https://zippy-praline-5fe3c6.netlify.app/"

@@ -24,9 +24,8 @@
   unique background shapes my approach to software development, providing me with
   a broad perspective and a deep understanding of different user needs.
   <h3 class="h3">Skills</h3>
-  I excel in fast-paced environments, adapt quickly to new situations, and solve
-  complex problems with analytical and strategic thinking. My technical skills include
-  JavaScript/HTML/CSS, WordPress, UI/UX, and Ableton 💿
+  JavaScript - React / Vue / Svelte - This site was built with Svelte - / HTML /
+  CSS / UIUX / WordPress / Customer Support / Hubspot / Salesforce / Ableton
   <h3 class="h3">Goal</h3>
   I'm eager to find opportunities where I can contribute creatively and collaboratively
   to projects that value cutting-edge technology. Feel free to reach out anytime

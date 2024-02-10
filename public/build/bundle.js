@@ -625,19 +625,19 @@ var app = (function () {
     			button0.textContent = "Contact";
     			t1 = space();
     			button1 = element("button");
-    			button1.textContent = "About";
+    			button1.textContent = "Projects";
     			t3 = space();
     			button2 = element("button");
-    			button2.textContent = "Projects";
+    			button2.textContent = "About";
     			attr_dev(button0, "class", "svelte-1vrywe7");
     			toggle_class(button0, "active", /*$activeSection*/ ctx[0] === "contact");
     			add_location(button0, file$6, 23, 2, 581);
     			attr_dev(button1, "class", "svelte-1vrywe7");
-    			toggle_class(button1, "active", /*$activeSection*/ ctx[0] === "about");
-    			add_location(button1, file$6, 29, 2, 708);
+    			toggle_class(button1, "active", /*$activeSection*/ ctx[0] === "projects");
+    			add_location(button1, file$6, 30, 2, 709);
     			attr_dev(button2, "class", "svelte-1vrywe7");
-    			toggle_class(button2, "active", /*$activeSection*/ ctx[0] === "projects");
-    			add_location(button2, file$6, 35, 2, 829);
+    			toggle_class(button2, "active", /*$activeSection*/ ctx[0] === "about");
+    			add_location(button2, file$6, 36, 2, 839);
     			attr_dev(aside, "class", "svelte-1vrywe7");
     			add_location(aside, file$6, 22, 0, 571);
     		},
@@ -668,11 +668,11 @@ var app = (function () {
     			}
 
     			if (dirty & /*$activeSection*/ 1) {
-    				toggle_class(button1, "active", /*$activeSection*/ ctx[0] === "about");
+    				toggle_class(button1, "active", /*$activeSection*/ ctx[0] === "projects");
     			}
 
     			if (dirty & /*$activeSection*/ 1) {
-    				toggle_class(button2, "active", /*$activeSection*/ ctx[0] === "projects");
+    				toggle_class(button2, "active", /*$activeSection*/ ctx[0] === "about");
     			}
     		},
     		i: noop,
@@ -727,8 +727,8 @@ var app = (function () {
     	});
 
     	const click_handler = () => scrollTo("contact");
-    	const click_handler_1 = () => scrollTo("about");
-    	const click_handler_2 = () => scrollTo("projects");
+    	const click_handler_1 = () => scrollTo("projects");
+    	const click_handler_2 = () => scrollTo("about");
 
     	$$self.$capture_state = () => ({
     		sections,
@@ -52648,7 +52648,7 @@ var app = (function () {
     			t3 = text("\n  I bring several years of professional experience across diverse industries, including,\n  software development, audio/music production 🎧, sales 🚗, and aviation 🛩. This\n  unique background shapes my approach to software development, providing me with\n  a broad perspective and a deep understanding of different user needs.\n  ");
     			h31 = element("h3");
     			h31.textContent = "Skills";
-    			t5 = text("\n  I excel in fast-paced environments, adapt quickly to new situations, and solve\n  complex problems with analytical and strategic thinking. My technical skills include\n  JavaScript/HTML/CSS, WordPress, UI/UX, and Ableton 💿\n  ");
+    			t5 = text("\n  JavaScript - React / Vue / Svelte - This site was built with Svelte - / HTML /\n  CSS / UIUX / WordPress / Customer Support / Hubspot / Salesforce / Ableton\n  ");
     			h32 = element("h3");
     			h32.textContent = "Goal";
     			t7 = text("\n  I'm eager to find opportunities where I can contribute creatively and collaboratively\n  to projects that value cutting-edge technology. Feel free to reach out anytime\n  ☀️");
@@ -52659,7 +52659,7 @@ var app = (function () {
     			attr_dev(h31, "class", "h3 svelte-1xutz4g");
     			add_location(h31, file$3, 25, 2, 881);
     			attr_dev(h32, "class", "h3 svelte-1xutz4g");
-    			add_location(h32, file$3, 29, 2, 1134);
+    			add_location(h32, file$3, 28, 2, 1068);
     			attr_dev(div, "class", "about-section svelte-1xutz4g");
     			add_location(div, file$3, 15, 0, 249);
     		},
@@ -53009,7 +53009,7 @@ var app = (function () {
 
     	project0 = new Project({
     			props: {
-    				title: "Simple Synth",
+    				title: "Vue Synth",
     				imgSrc: "/images/synth.png",
     				githubUrl: "https://github.com/zmprunella/vue-typescript-synth",
     				appUrl: "https://zesty-moxie-b93139.netlify.app/"
@@ -53029,7 +53029,7 @@ var app = (function () {
 
     	project2 = new Project({
     			props: {
-    				title: "Pokedex",
+    				title: "React Pokedex",
     				imgSrc: "/images/poke.png",
     				githubUrl: "https://github.com/zmprunella/vue-typescript-synth",
     				appUrl: "https://zippy-praline-5fe3c6.netlify.app/"
@@ -53055,7 +53055,7 @@ var app = (function () {
     			add_location(h1, file$1, 17, 2, 346);
     			attr_dev(div0, "class", "projects-container svelte-17tu9s3");
     			add_location(div0, file$1, 18, 2, 379);
-    			add_location(div1, file$1, 38, 2, 1069);
+    			add_location(div1, file$1, 38, 2, 1072);
     			attr_dev(div2, "id", "projects");
     			attr_dev(div2, "class", "svelte-17tu9s3");
     			add_location(div2, file$1, 16, 0, 303);
@@ -53186,18 +53186,18 @@ var app = (function () {
     	let div;
     	let contact;
     	let t2;
-    	let about;
-    	let t3;
     	let projects;
+    	let t3;
+    	let about;
     	let current;
     	spacebackground = new SpaceBackground({ $$inline: true });
     	sidebar = new Sidebar({ $$inline: true });
     	contact = new Contact({ $$inline: true });
     	contact.$on("loaded", /*handleComponentLoaded*/ ctx[0]);
-    	about = new About({ $$inline: true });
-    	about.$on("loaded", /*handleComponentLoaded*/ ctx[0]);
     	projects = new Projects({ $$inline: true });
     	projects.$on("loaded", /*handleComponentLoaded*/ ctx[0]);
+    	about = new About({ $$inline: true });
+    	about.$on("loaded", /*handleComponentLoaded*/ ctx[0]);
 
     	const block = {
     		c: function create() {
@@ -53208,9 +53208,9 @@ var app = (function () {
     			div = element("div");
     			create_component(contact.$$.fragment);
     			t2 = space();
-    			create_component(about.$$.fragment);
-    			t3 = space();
     			create_component(projects.$$.fragment);
+    			t3 = space();
+    			create_component(about.$$.fragment);
     			attr_dev(div, "id", "content");
     			attr_dev(div, "class", "svelte-19vrms6");
     			add_location(div, file, 63, 0, 1727);
@@ -53226,9 +53226,9 @@ var app = (function () {
     			insert_dev(target, div, anchor);
     			mount_component(contact, div, null);
     			append_dev(div, t2);
-    			mount_component(about, div, null);
-    			append_dev(div, t3);
     			mount_component(projects, div, null);
+    			append_dev(div, t3);
+    			mount_component(about, div, null);
     			current = true;
     		},
     		p: noop,
@@ -53237,16 +53237,16 @@ var app = (function () {
     			transition_in(spacebackground.$$.fragment, local);
     			transition_in(sidebar.$$.fragment, local);
     			transition_in(contact.$$.fragment, local);
-    			transition_in(about.$$.fragment, local);
     			transition_in(projects.$$.fragment, local);
+    			transition_in(about.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(spacebackground.$$.fragment, local);
     			transition_out(sidebar.$$.fragment, local);
     			transition_out(contact.$$.fragment, local);
-    			transition_out(about.$$.fragment, local);
     			transition_out(projects.$$.fragment, local);
+    			transition_out(about.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -53256,8 +53256,8 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(div);
     			destroy_component(contact);
-    			destroy_component(about);
     			destroy_component(projects);
+    			destroy_component(about);
     		}
     	};
 
