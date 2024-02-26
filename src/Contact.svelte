@@ -15,7 +15,7 @@
 
 <div id="contact" bind:this={contact}>
   <h1 class="glow">Zane Prunella</h1>
-  <p>Software Developer & Designer<br /> Audio & Music Producer</p>
+  <p>Front-end Developer<br /> Music Producer</p>
   <p>zane.prunella@gmail.com</p>
 
   <div class="social-links">
