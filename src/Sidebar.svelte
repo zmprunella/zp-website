@@ -1,5 +1,4 @@
-<!-- Sidebar.svelte -->
-<script>
+<!-- <script>
   import { sections, activeSection } from "./store.js"; // Make sure to adjust the path
 
   let sectionValues;
@@ -20,6 +19,7 @@
   }
 </script>
 
+Sidebar.svelte
 <aside>
   <button
     class:active={$activeSection === "contact"}
@@ -125,4 +125,4 @@
       font-size: 15px; /* Increase font size for readability */
     }
   }
-</style>
+</style> -->

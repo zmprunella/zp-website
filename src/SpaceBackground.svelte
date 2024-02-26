@@ -12,7 +12,7 @@
 
     let colors = [];
     camera = new THREE.PerspectiveCamera(
-      75,
+      95,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -57,7 +57,7 @@
     );
 
     let starMaterial = new THREE.PointsMaterial({
-      size: 0.6,
+      size: 0.8,
       // map: sprite,
       vertexColors: true, // indicate that the material will use vertex colors
     });

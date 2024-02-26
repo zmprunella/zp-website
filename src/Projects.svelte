@@ -1,4 +1,4 @@
-<!-- Projects.svelte -->
+<!-- Projects.svelte
 <script>
   import Project from "./Project.svelte";
   import { onMount } from "svelte";
@@ -67,4 +67,4 @@
       font-size: 10px;
     }
   }
-</style>
+</style> -->

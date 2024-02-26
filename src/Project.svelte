@@ -1,8 +1,7 @@
-<!-- Project.svelte -->
-<script>
+<!-- <script>
   import { onMount, createEventDispatcher } from "svelte";
   export let imgSrc;
-  // export let githubUrl;
+
   export let appUrl;
   export let title;
 
@@ -14,6 +13,7 @@
   });
 </script>
 
+Project.svelte
 <div class="project" bind:this={ref}>
   <h2 class="title">{title}</h2>
   <div class="image-container">
@@ -21,11 +21,11 @@
   </div>
 
   <div class="buttons">
-    <!-- <a href={githubUrl} target="_blank" rel="noopener" class="btn">GitHub</a> -->
-    <a href={appUrl} target="_blank" rel="noopener" class="btn">View App</a>
+     <a href={githubUrl} target="_blank" rel="noopener" class="btn">GitHub</a> -->
+<!-- <a href={appUrl} target="_blank" rel="noopener" class="btn">View App</a>
   </div>
-</div>
-
+</div> -->
+<!-- 
 <style>
   .project {
     display: flex;
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* To ensure the image doesn't overflow the div */
+    overflow: hidden;
   }
 
   .project .image-container img {
@@ -75,4 +75,4 @@
     color: white;
     font-family: "Lora", serif;
   }
-</style>
+</style> -->

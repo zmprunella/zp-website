@@ -1,5 +1,4 @@
-<!-- About.svelte -->
-<script>
+<!-- <script>
   import { onMount } from "svelte";
   import { sections } from "./store.js";
 
@@ -13,6 +12,7 @@
   });
 </script>
 
+About.svelte
 <div class="about-section" bind:this={about}>
   <h1 class="glow">About</h1>
   Hi, I'm a software developer 💻 and audio producer 🎧 who is curious about how
@@ -61,4 +61,4 @@
       font-size: 14px; /* Decrease font size to better fit mobile screens */
     }
   }
-</style>
+</style> -->
