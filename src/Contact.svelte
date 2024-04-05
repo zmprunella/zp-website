@@ -16,7 +16,7 @@
 <div id="contact" bind:this={contact}>
   <h1 class="glow">Zane Prunella</h1>
   <p>💻 Front-end Developer 🎨</p>
-  <p>JavaScript React | Vue | Svelte | WordPress</p>
+  <p>JavaScript - React | Vue | Svelte | WordPress</p>
   <!-- <p>& Music Producer 🎧</p> -->
   <p>zane.prunella@gmail.com</p>
 
